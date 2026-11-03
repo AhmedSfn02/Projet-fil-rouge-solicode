@@ -1,0 +1,491 @@
+/* Star Events - Wedding Buffet Product Detail page
+   This file is the only stylesheet of this page (standalone). */
+
+/* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+    color: #2b2620;
+    background: #fdfaf5;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* HEADER */
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: rgba(253, 250, 245, 0.85);
+    backdrop-filter: blur(2px);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    margin: 0 auto;
+    align-items: center;
+    max-width: 1200px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+    gap: 4px;
+}
+
+.logo img {
+    width: 65px;
+    padding-top: 0;
+}
+
+.logo h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 17px;
+    letter-spacing: 1.2px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
+    padding-top: 0;
+    margin: 0;
+}
+
+.logo span {
+    font-family: "Jost", "Helvetica Neue", Arial, sans-serif;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    line-height: 1;
+    border-bottom: 1px solid #b8913f;
+    padding-bottom: 8px;
+    margin-top: 4px;
+}
+
+.menu ul {
+    display: flex;
+    gap: 30px;
+    text-align: center;
+}
+
+.menu a {
+    font-size: 18px;
+    font-family: "Jost", "Helvetica Neue", Arial, sans-serif;
+    color: #6f665a;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 3px;
+    transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.menu a:hover {
+    color: #2b2620;
+    border-bottom-color: #b8913f;
+    padding-bottom: 3px;
+}
+
+.menu li:nth-child(2) a {
+    color: #2b2620;
+    border-bottom: 1px solid #b8913f;
+    padding-bottom: 3px;    
+}
+
+.btn-admin a {
+    border: 1px solid #9a7733;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: "Jost", "Helvetica Neue", Arial, sans-serif;
+    font-weight: 200;
+    color: #2b2620;
+    border-radius: 30px;
+}
+
+.btn-admin a:hover {
+    background-color: #b8913f;
+    color: #fff;
+
+}
+
+
+/* BREADCRUMB */
+
+.breadcrumb {
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto 0;
+    font-family: "Jost", "Helvetica Neue", Arial, sans-serif;
+    font-size: 15px;
+    color: #6f665a;
+}
+
+.breadcrumb a {
+    color: #6f665a;
+}
+
+.breadcrumb a:hover {
+    color: #9a7733;
+}
+
+.breadcrumb span {
+    margin: 0 8px;
+}
+
+.breadcrumb .current-page {
+    margin: 0;
+    color: #2b2620;
+    font-weight: 500;
+}
+
+/* PRODUCT PRESENTATION */
+
+.product {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto 70px;
+}
+
+.product-image {
+    width: 45%;
+}
+
+.product-image img {
+    width: 100%;
+    height: 620px;
+    object-fit: cover;
+    display: block;
+    border-radius: 250px 250px 0 0;
+}
+
+.product-info {
+    width: 55%;
+}
+
+.product-category {
+    font-family: "Jost", "Helvetica Neue", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #9a7733;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+.product-info h1 {
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 1.1;
+    margin: 15px 0 25px;
+}
+
+.product-intro {
+    font-family: "Jost", "Helvetica Neue", Arial, sans-serif;
+    font-size: 19px;
+    color: #6f665a;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.availability {
+    display: inline-block;
+    font-family: "Jost", "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+    color: #2b2620;
+    background-color: #f5efe4;
+    border: 1px solid #e7dccb;
+    border-radius: 30px;
+    padding: 10px 20px;
+    margin-bottom: 35px;
+}
+
+.availability i {
+    color: #9a7733;
+    margin-right: 8px;
+}
+
+/* BUTTONS (used twice in the page) */
+
+.product-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.btn-quote {
+    padding: 15px 30px;
+    font-size: 17px;
+    font-family: "Jost", "Helvetica Neue", Arial, sans-serif;
+    font-weight: 500;
+    color: #fff;
+    background-color: #b8913f;
+    border: 1px solid #b8913f;
+    border-radius: 30px;
+    transition: background-color 0.2s;
+}
+
+.btn-quote:hover {
+    background-color: #9a7733;
+}
+
+.btn-whatsapp {
+    padding: 15px 30px;
+    font-size: 17px;
+    font-family: "Jost", "Helvetica Neue", Arial, sans-serif;
+    font-weight: 500;
+    color: #2b2620;
+    border: 1px solid #9a7733;
+    border-radius: 30px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.btn-whatsapp:hover {
+    background-color: #b8913f;
+    color: #fff;
+}
+
+/* CHARACTERISTICS */
+
+.characteristics {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto 70px;
+}
+
+.characteristics h2 {
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: 44px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.characteristics table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border: 1px solid #e7dccb;
+    margin-bottom: 0;
+}
+
+.characteristics th,
+.characteristics td {
+    padding: 16px 20px;
+    text-align: left;
+    vertical-align: top;
+    border-bottom: 1px solid #e7dccb;
+    font-family: "Jost", "Helvetica Neue", Arial, sans-serif;
+    font-size: 17px;
+}
+
+.characteristics th {
+    width: 30%;
+    color: #9a7733;
+    font-weight: 500;
+    background-color: #f5efe4;
+}
+
+.characteristics td {
+    color: #6f665a;
+}
+
+/* ABOUT + QUOTE (side by side) */
+
+.about-quote {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto 80px;
+}
+
+.description {
+    width: 50%;
+    padding: 40px 50px;
+}
+
+.description h2 {
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.description p {
+    font-family: "Jost", "Helvetica Neue", Arial, sans-serif;
+    font-size: 18px;
+    color: #6f665a;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.quote-box {
+    width: 50%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px 50px;
+    text-align: center;
+    background-color: #f5efe4;
+    border: 1px solid #e7dccb;
+    border-radius: 20px;
+}
+
+.quote-box h2 {
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.quote-box p {
+    font-family: "Jost", "Helvetica Neue", Arial, sans-serif;
+    font-size: 18px;
+    color: #6f665a;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.quote-box .product-buttons {
+    justify-content: center;
+}
+
+
+/* Footer */
+
+.footer {
+    background-color: #2b2620;
+    color: #fdfaf5;
+    padding: 55px 8% 20px;
+    font-family: "Jost", "Helvetica Neue", Arial, sans-serif;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr 1.2fr;
+    gap: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Footer logo */
+
+.footer-logo .logo {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo .logo img {
+    width: 60px;
+    height: auto;
+}
+
+.footer-logo .logo h2 {
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: #fdfaf5;
+    margin: 0;
+}
+
+.footer-logo .logo h2 span {
+    display: block;
+    font-family: "Jost", "Helvetica Neue", Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    color: #c7beb2;
+}
+
+.footer h3 {
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #b8913f;
+    margin-bottom: 22px;
+}
+
+/* Footer menu */
+
+.footer-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-menu li {
+    margin-bottom: 13px;
+}
+
+.footer a {
+    color: #d1c8bc;
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.2s;
+}
+
+.footer a:hover {
+    color: #b8913f;
+}
+
+/* Footer contact */
+
+.footer-contact p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #d1c8bc;
+    margin-bottom: 10px;
+}
+
+.footer-contact i {
+    color: #b8913f;
+    width: 22px;
+    margin-right: 8px;
+    font-size: 16px;
+    vertical-align: middle;
+}
+
+.footer-location {
+    color: #b8913f !important;
+    margin-top: 18px;
+}
+
+/* Footer copyright */
+
+.footer-bottom {
+    max-width: 1200px;
+    margin: 40px auto 0;
+    padding-top: 20px;
+    border-top: 1px solid #51483d;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 13px;
+    color: #a99e90;
+    margin: 0;
+}

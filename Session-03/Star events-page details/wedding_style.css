@@ -1,0 +1,715 @@
+/* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+    color: #2b2620;
+    background: #fdfaf5;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* HEADER */
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: rgba(253, 250, 245, 0.85);
+    backdrop-filter: blur(2px);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    margin: 0 auto;
+    align-items: center;
+    max-width: 1200px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+    gap: 4px;
+}
+
+.logo img {
+    width: 65px;
+    padding-top: 0;
+}
+
+.logo h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 17px;
+    letter-spacing: 1.2px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
+    padding-top: 0;
+    margin: 0;
+}
+
+.logo span {
+    font-family: "Jost", "Helvetica Neue", Arial, sans-serif;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    line-height: 1;
+    border-bottom: 1px solid #b8913f;
+    padding-bottom: 8px;
+    margin-top: 4px;
+}
+
+.menu ul {
+    display: flex;
+    gap: 30px;
+    text-align: center;
+}
+
+.menu a {
+    font-size: 18px;
+    font-family: "Jost", "Helvetica Neue", Arial, sans-serif;
+    color: #6f665a;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 3px;
+    transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.menu a:hover {
+    color: #2b2620;
+    border-bottom-color: #b8913f;
+    padding-bottom: 3px;
+}
+
+.menu li:nth-child(2) a {
+    color: #2b2620;
+    border-bottom: 1px solid #b8913f;
+    padding-bottom: 3px;    
+}
+
+.btn-admin a {
+    border: 1px solid #9a7733;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: "Jost", "Helvetica Neue", Arial, sans-serif;
+    font-weight: 200;
+    color: #2b2620;
+    border-radius: 30px;
+}
+
+.btn-admin a:hover {
+    background-color: #b8913f;
+    color: #fff;
+
+}
+
+/* MAIN */
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    max-width: 1500px;
+    height: 100%;
+    margin: 40px auto 90px;
+    max-width: 1200px;
+}
+
+.contain-section {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    padding: 80px;
+}
+
+.contain-section>span {
+    font-size: 14px;
+    font-family: "Jost", "Helvetica Neue", Arial, sans-serif;
+    font-weight: 500;
+    color: #9a7733;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+.contain-section div h1 {
+    font-size: 90px;
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-weight: 700;
+}
+
+.contain-section div span {
+    font-size: 90px;
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-weight: 500;
+    font-style: italic;
+    color: #9a7733;
+    line-height: 0.7;
+}
+
+.contain-section p {
+    font-size: 18px;
+    font-family: "Jost", "Helvetica Neue", Arial, sans-serif;
+    padding-top: 44px;
+    color: #6f665a;
+    margin-bottom: 50px;
+}
+
+.contain-section div a {
+    padding: 15px 30px;
+    font-size: 18px;
+    font-family: "Jost", "Helvetica Neue", Arial, sans-serif;
+    font-weight: 500;
+    color: #fff;
+    border-radius: 30px;
+    background-color: #b8913f;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.contain-section div a:hover {
+    background-color: #9a7733;
+}
+
+.contain-images {
+    width: 45%;
+    display: grid;
+    grid-template-columns: 315px 200px;
+    position: relative;
+}
+
+.contain-images>img {
+    width: 315px;
+    height: 580px;
+    object-fit: cover;
+    border-radius: 200px 200px 0 0;
+
+}
+
+.contain-images div {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    position: absolute;
+    right: 60px;
+    top: 50px;
+}
+
+.contain-images div img:first-child {
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 200px 200px 0 0;
+    border: solid 5px white;
+}
+
+.contain-images div img:last-child {
+    width: 191px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 200px 200px 0 0;
+    border: solid 5px white;
+}
+
+/* Gallery */
+
+.catalog {
+    width: 70%;
+    margin: 0 auto 50px;
+    max-width: 1200px;
+}
+
+.catalog span {
+    color: #9a7733;
+    font-size: 12.8px;
+    font-weight: 500;
+    font-family: "Jost", "Helvetica Neue", Arial, sans-serif;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+.catalog h2 {
+    font-size: 50px;
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.gallery-description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.catalog p {
+    font-size: 18px;
+    font-family: "Jost", "Helvetica Neue", Arial, sans-serif;
+    color: #6f665a;
+    margin-bottom: 0;
+}
+
+.gallery-more a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #9a7733;
+    text-decoration: none;
+    font-family: "Jost", Arial, sans-serif;
+    font-size: 15px;
+    transition: color 0.3s ease;
+}
+
+.gallery-more a span {
+    font-size: 20px;
+    transition: transform 0.3s ease;
+}
+
+.gallery-more a:hover {
+    color: #6f5524;
+}
+
+.gallery-more a:hover span {
+    transform: translateX(4px);
+}
+
+.gallery-img {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.img-box {
+    position: relative;
+    height: 340px;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.img-box:hover img {
+    transform: scale(1.05);
+}
+
+.customize-link {
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    right: 12px;
+
+    padding: 12px;
+    border-radius: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: rgba(253, 250, 245, 0.95);
+    color: #9a7733;
+    text-decoration: none;
+
+    font-family: "Jost", Arial, sans-serif;
+    font-size: 14px;
+
+    opacity: 0;
+    transform: translateY(8px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.img-box:hover .customize-link {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* Rental */
+.rental {
+    background-color: #f5efe4;
+    padding: 60px 0;
+}
+
+.rent {
+    width: 77%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.rent > span {
+    color: #9a7733;
+    font-size: 12.8px;
+    font-weight: 500;
+    font-family: "Jost", "Helvetica Neue", Arial, sans-serif;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+.rent h2 {
+    font-size: 50px;
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-weight: 600;
+    line-height: 1.2;
+    margin: 15px 0;
+}
+
+.rent > p {
+    font-size: 18px;
+    font-family: "Jost", "Helvetica Neue", Arial, sans-serif;
+    color: #6f665a;
+    margin: 0 0 30px;
+    line-height: 1.6;
+}
+
+.rental-images {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.rent-card {
+    min-width: 0;
+    background-color: #ffffff;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.rent-image {
+    position: relative;
+    width: 100%;
+    height: 190px;
+    overflow: hidden;
+}
+
+.rent-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.rent-quote-link {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 30px;
+    height: 30px;
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+    gap: 0;
+    overflow: hidden;
+    white-space: nowrap;
+
+    border-radius: 5px;
+    background-color: #fdfaf5;
+    color: #9a7733;
+    text-decoration: none;
+
+    transition: width 0.3s ease;
+}
+
+.rent-quote-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1;
+    letter-spacing: normal;
+}
+
+.rent-quote-text {
+    max-width: 0;
+    opacity: 0;
+    overflow: hidden;
+
+    font-family: "Jost", "Helvetica Neue", Arial, sans-serif;
+    font-size: 13px;
+    letter-spacing: normal;
+    text-transform: none;
+
+    transition: max-width 0.3s ease, opacity 0.2s ease;
+}
+
+.rent-image:hover .rent-quote-link {
+     width: 130px;
+    justify-content: flex-start;
+    padding: 0 6px;
+    gap: 5px;
+}
+
+.rent-image:hover .rent-quote-icon {
+    width: 14px;
+    height: 100%;
+}
+
+.rent-image:hover .rent-quote-text {
+    max-width: 110px;
+    opacity: 1;
+}
+
+.rent-info {
+    padding: 5px 20px 20px;
+}
+
+.rent-info h3 {
+    font-size: 21px;
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-weight: 600;
+    line-height: 1.3;
+    margin: 12px 0;
+}
+
+.rent-info p {
+    font-size: 16px;
+    font-family: "Jost", "Helvetica Neue", Arial, sans-serif;
+    color: #6f665a;
+    line-height: 1.5;
+    margin: 0;
+}
+
+
+/* About and Booking */
+
+.about-booking {
+    width: 100%;
+}
+
+.abt-book {
+    width: 100%;
+    display: flex;
+    gap: 60px;
+    margin: 60px auto;
+    max-width: 1200px;
+}
+
+/* About */
+
+.about {
+    width: 50%;
+    padding: 40px 50px;
+}
+
+.about h2 {
+    font-size: 36px;
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 19px;
+    font-family: "Jost", "Helvetica Neue", Arial, sans-serif;
+    color: #6f665a;
+    line-height: 1.8;
+}
+
+/* booking */
+
+.booking {
+    width: 40%;
+    padding: 40px 50px;
+    text-align: center;
+    background-color: #f5efe4;
+    border-radius: 20px;
+    border: 1px solid #e7dccb;
+}
+
+.booking h2 {
+    font-size: 36px;
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.booking p {
+    font-size: 18px;
+    font-family: "Jost", "Helvetica Neue", Arial, sans-serif;
+    color: #6f665a;
+    line-height: 1.7;
+    margin-bottom: 60px;
+}
+
+.booking div a:first-child {
+    padding: 15px 30px;
+    font-size: 16px;
+    font-family: "Jost", "Helvetica Neue", Arial, sans-serif;
+    font-weight: 500;
+    color: #fff;
+    border-radius: 30px;
+    background-color: #b8913f;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.booking div a:first-child:hover {
+    background-color: #9a7733;
+}
+
+.booking div a:last-child {
+    margin-left: 15px;
+    border: 1px solid #9a7733;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-family: "Jost", "Helvetica Neue", Arial, sans-serif;
+    font-weight: 500;
+    color: #2b2620;
+    border-radius: 30px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.booking div a:last-child:hover {
+    background-color: #b8913f;
+    color: #fff;
+}
+
+
+/* Footer */
+
+.footer {
+    background-color: #2b2620;
+    color: #fdfaf5;
+    padding: 55px 8% 20px;
+    font-family: "Jost", "Helvetica Neue", Arial, sans-serif;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr 1.2fr;
+    gap: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Footer logo */
+
+.footer-logo .logo {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo .logo img {
+    width: 60px;
+    height: auto;
+}
+
+.footer-logo .logo h2 {
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: #fdfaf5;
+    margin: 0;
+}
+
+.footer-logo .logo h2 span {
+    display: block;
+    font-family: "Jost", "Helvetica Neue", Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    color: #c7beb2;
+}
+
+.footer h3 {
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #b8913f;
+    margin-bottom: 22px;
+}
+
+/* Footer menu */
+
+.footer-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-menu li {
+    margin-bottom: 13px;
+}
+
+.footer a {
+    color: #d1c8bc;
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.2s;
+}
+
+.footer a:hover {
+    color: #b8913f;
+}
+
+/* Footer contact */
+
+.footer-contact p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #d1c8bc;
+    margin-bottom: 10px;
+}
+
+.footer-contact i {
+    color: #b8913f;
+    width: 22px;
+    margin-right: 8px;
+    font-size: 16px;
+    vertical-align: middle;
+}
+
+.footer-location {
+    color: #b8913f !important;
+    margin-top: 18px;
+}
+
+/* Footer copyright */
+
+.footer-bottom {
+    max-width: 1200px;
+    margin: 40px auto 0;
+    padding-top: 20px;
+    border-top: 1px solid #51483d;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 13px;
+    color: #a99e90;
+    margin: 0;
+}
